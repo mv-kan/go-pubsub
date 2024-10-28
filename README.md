@@ -1,0 +1,1 @@
+Golang Publisher and Subscriber implemented with channels, maps, and mutexes.
