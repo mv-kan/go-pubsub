@@ -34,7 +34,6 @@ type publisher struct {
 	mu        sync.Mutex
 }
 
-// check for nil channel, if channel is nil then there is a problem
 func (p *publisher) Subscribe(topic Topic) (uuid.UUID, <-chan any, error) {
 	p.mu.Lock()
 	defer p.mu.Unlock()
